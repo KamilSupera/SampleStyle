@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --config build/webpack.config.dev.js"
+    "dev": "webpack-dev-server --config build/webpack.config.dev.js",
+    "build-dist": "webpack --config build/webpack.config.production.js --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -17,9 +18,12 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.1.0",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "vue-loader": "^15.7.1",
