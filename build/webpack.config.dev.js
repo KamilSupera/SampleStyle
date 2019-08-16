@@ -1,8 +1,13 @@
 'use strict'
 
+const path = require('path');
 const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
 
 module.exports = {
   mode: 'development',
@@ -39,6 +44,13 @@ module.exports = {
         ]
       }
     ]
+  },
+
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      '@': resolve('src')
+    }
   },
 
   plugins: [
