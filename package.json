@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "codemirror": "^5.48.4",
     "vue": "^2.6.10",
     "vue-router": "^3.0.7"
   },
