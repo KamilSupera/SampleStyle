@@ -1,10 +1,17 @@
+/* import codemirror css and core */
 import CodeMirror from 'codemirror';
 import 'codemirror/mode/css/css';
 
+import 'bootstrap';
+import 'codemirror';
 import Vue from 'vue'
 
-import App from './App'
+import App from './App.vue'
 import router from './router'
+import 'bootstrap';
+import 'codemirror';
+
+import navigation from './components/layout/navigation.vue'
 
 import './assets/styles.scss'
 
@@ -22,6 +29,8 @@ Vue.prototype.$CodeMirrorDefault = {
   mode: 'css',
   theme: 'solarized',
 }
+
+Vue.component('navigation', navigation)
 
 new Vue({
   router,

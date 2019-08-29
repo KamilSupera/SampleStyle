@@ -1,3 +1,13 @@
-@import './styles/main.scss';
+/* bootstrap css import */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* code themes for codemirror */
 @import './../../node_modules/codemirror/lib/codemirror.css';
 @import './../../node_modules/codemirror/theme/solarized.css';
+
+/* codemirror import */
+@import "~codemirror/lib/codemirror.css";
+
+/* import main application styles */
+@import './styles/main.scss';
+
