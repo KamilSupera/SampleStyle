@@ -8,6 +8,8 @@
 /* codemirror import */
 @import "~codemirror/lib/codemirror.css";
 
+/* import variables used in main styles */
+@import './styles/variables.scss';
+
 /* import main application styles */
 @import './styles/main.scss';
-

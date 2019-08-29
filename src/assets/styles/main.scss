@@ -1,15 +1,31 @@
 nav li {
     padding: 0px 2.5em 0px 2.5em;
 }
+
 a {
     font-weight: 600;
+    color: #000;
+    text-align: center;
+
+    &:hover {
+        text-decoration: none;
+        color: #000;
+    }
+
+    h1 {
+        margin-top: $main-margins-y;
+        margin-bottom: $main-margins-y;
+    }
 }
+
 .separate-line {
     border-bottom: 4px black solid;
 }
+
 .img-card {
     background-color: gray;
 }
+
 .box-container {
     display: block;
     position: relative;
@@ -20,24 +36,24 @@ a {
     user-select: none;
 
     margin-top: 3em;
-    margin-left: 1em
-}
+    margin-left: 1em;
 
-.box-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
+    & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
 
-.box-checkmark {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    .box-checkmark {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+    }
 }
 
 .box-container:hover input ~ .box-checkmark {
@@ -67,9 +83,15 @@ a {
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
+
 .card {
     min-height: 10em;
 }
+
 blockquote {
     margin: 0 -10em 1rem !important;
+}
+
+.collapse {
+    margin-top: $main-margins-y;
 }
