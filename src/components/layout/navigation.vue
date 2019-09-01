@@ -1,7 +1,9 @@
 <template>
     <div id="navigation">
         <div class="container-fluid separate-line">
-            <h1 class="text-center my-4">Sample Style</h1>
+            <router-link :to="{name: 'home'}">
+                <h1>Sample Style</h1>
+            </router-link>
         </div>
         <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <a class="navbar-brand" href="#"></a>

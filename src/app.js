@@ -2,8 +2,9 @@
 import CodeMirror from 'codemirror';
 import 'codemirror/mode/css/css';
 
-import 'bootstrap';
-import 'codemirror';
+/* import script autorefresh for display codemirror editor in DOM show/hide parts */
+import './assets/scripts/autorefresh.js'
+
 import Vue from 'vue'
 
 import App from './App.vue'
@@ -26,6 +27,7 @@ Vue.prototype.$CodeMirrorDefault = {
   lineNumbers: true,
   autofocus: false,
   readOnly: true,
+  autoRefresh: true,
   mode: 'css',
   theme: 'solarized',
 }
