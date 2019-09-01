@@ -1,7 +1,9 @@
 <template>
     <div id="navigation">
         <div class="container-fluid separate-line">
-            <h1 class="text-center my-4">Sample Style</h1>
+            <router-link :to="{name: 'home'}">
+                <h1>Sample Style</h1>
+            </router-link>
         </div>
         <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <a class="navbar-brand" href="#"></a>
@@ -18,14 +20,10 @@
                             <router-link :to="{ name: 'checkboxes' }">Checkboxes</router-link>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item">
+                        <router-link :to="{ name: 'grids' }" class="nav-link">
                             GRIDS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                        </div>
+                        </router-link>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
